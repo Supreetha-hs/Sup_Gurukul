@@ -1,11 +1,11 @@
 # #Question 5: Write a Python program to create a text file called sample.txt and write the sentence "Hello, this is a sample file." to the file. Then, read and display the content from the file.
-# file = open("sample.txt", "w")
-# file.write("Hello! this is a sample file.")
-# file.close()
-# file=open("sample.txt" , "r")
-# display=file.read()
-# file.close()
-# print(display)
+file = open("sample.txt", "w")
+file.write("Hello! this is a sample file.")
+file.close()
+file=open("sample.txt" , "r")
+display=file.read()
+file.close()
+print(display)
 
 #########
 # #Question 6: Write a Python program that reads a text file called data.txt and counts the number of words in the file.
