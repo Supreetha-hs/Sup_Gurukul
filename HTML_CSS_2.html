@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customer Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .form-container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            color: #3498db;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-size: 1.1em;
+        }
+        input[type="text"], input[type="email"], input[type="radio"], input[type="checkbox"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .rating {
+            display: flex;
+            justify-content: space-between;
+            max-width: 200px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Customer Satisfaction Survey</h1>
+</header>
+
+<div class="container">
+
+    <section class="section">
+        <h2>We Value Your Feedback</h2>
+        <p>Please take a moment to fill out this survey and share your thoughts with us. Your input helps us improve our services.</p>
+    </section>
+
+    <section class="section">
+        <div class="form-container">
+            <h2>Survey Questions</h2>
+            <form action="#" method="POST">
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="rating">How satisfied are you with our service?</label>
+                <div class="rating">
+                    <label>
+                        <input type="radio" name="rating" value="1" required> 1
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="2"> 2
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="3"> 3
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="4"> 4
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="5"> 5
+                    </label>
+                </div>
+
+                <label for="services">Which of our services have you used? (Select all that apply)</label>
+                <label><input type="checkbox" name="services" value="consulting"> Consulting</label>
+                <label><input type="checkbox" name="services" value="support"> Support</label>
+                <label><input type="checkbox" name="services" value="training"> Training</label>
+                <label><input type="checkbox" name="services" value="software"> Software</label>
+
+                <label for="suggestions">What can we improve?</label>
+                <textarea id="suggestions" name="suggestions" placeholder="Enter your suggestions" rows="4"></textarea>
+
+                <label for="feedback">Any additional feedback?</label>
+                <textarea id="feedback" name="feedback" placeholder="Share your thoughts" rows="4"></textarea>
+
+                <input type="submit" value="Submit Feedback">
+            </form>
+        </div>
+    </section>
+
+    <section class="section image-container">
+        <h2>Thank You for Participating</h2>
+        <p>Your feedback is important to us:</p>
+        <img src="https://via.placeholder.com/800x400?text=Survey+Image" alt="Survey Image">
+    </section>
+
+</div>
+
+</body>
+</html>
